@@ -7,9 +7,10 @@
     <title>Document</title>
   </head>
   <body>
-    i am learning Js
+    <h1>i am learning Js</h1>
   </body>
   <script>
+    "use strict";
     // let a = 34;
     let a = "This is me";
     // Numbers
@@ -27,6 +28,17 @@
       b: 40,
       c: 60,
     };
+    document.addEventListener("click", function click() {
+      console.log("Clicked");
+      //   alert("You have clicked the heading");
+      let conf = confirm("Are you sure?");
+      console.log(conf);
+    });
+    let arr = [23, 34, 56, 77];
+    let myfunc = (number) => {
+      console.log("The number is" + this);
+    };
+    myfunc();
     console.log(a);
   </script>
 </html>
